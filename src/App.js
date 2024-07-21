@@ -27,6 +27,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>SRAnalysis</h1>
+      </header>
+      <main>
         <form onSubmit={handleSubmit}>
           <input type="file" onChange={handleFileChange} />
           <button type="submit">Submit</button>
@@ -43,7 +46,10 @@ function App() {
             <img src={`data:image/png;base64,${plot}`} alt="Plot" />
           </div>
         )}
-      </header>
+      </main>
+      <footer className="App-footer">
+        <p>&copy; 2024 SRAnalysis. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
