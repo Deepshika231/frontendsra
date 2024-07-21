@@ -37,7 +37,7 @@ function App() {
         {results && (
           <div>
             <h2>Results:</h2>
-            <pre>{results}</pre>
+            <pre>{JSON.stringify(results, null, 2)}</pre>
           </div>
         )}
         {plot && (
